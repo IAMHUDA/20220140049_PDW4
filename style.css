@@ -1,0 +1,193 @@
+/* <===================> */
+/*   😘😘😘😘😘😘😘   */
+/*   Author : huda gans  */
+/*   ~~~~~~~~~~~~~~~~~~  */
+/* <===================> */
+:root {
+  --primary-color: #fdfeff;
+  --secondary-color:  #353639;
+}
+
+
+/* <===================> */
+/*         navbar        */
+/*   ~~~~~~~~~~~~~~~~~~  */
+/* <===================> */
+
+/* Navbar */
+.navbar {
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+  font-weight: 800;
+  position: static;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+}
+
+.navbar-scrolled {
+  background-color: #00000032; /* Warna latar belakang navbar saat di-scroll */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Efek bayangan untuk tampilan navbar saat di-scroll */
+}
+
+/* Toggle Theme Button */
+.toggle-theme {
+  cursor: pointer;
+  width: 40px; /* Lebar tombol toggle */
+  height: 40px; /* Tinggi tombol toggle */
+  border-radius: 50%; /* Membuat tombol toggle berbentuk lingkaran */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3); /* Warna latar belakang toggle */
+  transition: transform 0.5s ease; /* Transisi untuk efek rotasi */
+}
+@keyframes changeColor {
+  0% { color: rgb(255, 0, 0); } /* Merah */
+  33% { color: rgb(247, 0, 255); } /* Hijau */
+  66% { color: rgb(0, 0, 255); } /* Biru */
+  100% { color: rgb(255, 0, 0); } /* Kembali ke Merah */
+}
+
+.navbar-brand {
+  animation: changeColor 6s infinite; /* Animasi akan berlangsung selama 6 detik dan terus berputar */
+}
+
+
+
+/* <===================> */
+/*          main         */
+/*   ~~~~~~~~~~~~~~~~~~  */
+/* <===================> */
+.gradient-custom-2 {
+  /* fallback for old browsers */
+  background: #fccb90;
+  
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+  
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+  }
+  
+  @media (min-width: 768px) {
+  .gradient-form {
+  height: 100vh !important;
+  }
+  }
+  @media (min-width: 769px) {
+  .gradient-custom-2 {
+  border-top-right-radius: .3rem;
+  border-bottom-right-radius: .3rem;
+  }
+  }
+  .card {
+    box-shadow: 0px 0px 0px 10px rgb(244, 255, 148); /* Bayangan di setiap sisi */
+  }
+
+  
+
+/* <===================> */
+/*        dangdut        */
+/*  ~~~~~~~~~~~~~~~~~~~  */
+/* <===================> */
+
+  .desk h4{
+    display: inline-block;
+    color: transparent;
+    background-image: linear-gradient(90deg, #ffffff, #726d89, #000000); /* Warna lampu yang menyala */
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: shine 2s linear infinite;
+    font-family: "Madimi One", sans-serif; /* Animasi untuk mengubah warna */
+
+  }
+
+     h4{
+    display: inline-block;
+    color: transparent;
+    background-image: linear-gradient(90deg, #ff0000, #1100ff, #00ff00); /* Warna lampu yang menyala */
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: shine 2s linear infinite;
+    font-family: "Madimi One", sans-serif; /* Animasi untuk mengubah warna */
+
+  }
+  /* tulisan dugem */
+  .text-center h4{
+    display: inline-block;
+    color: transparent;
+    background-image: linear-gradient(90deg, #ff0000, #1100ff, #00ff00); /* Warna lampu yang menyala */
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: shine 2s linear infinite;
+    font-family: "Madimi One", sans-serif; /* Animasi untuk mengubah warna */
+
+  }
+
+  @keyframes shine {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+
+/* <===================> */
+/*       gambargede      */
+/*   ~~~~~~~~~~~~~~~~~~  */
+/* <===================> */
+.carousel-item img {
+  max-height: 700px; /* Tinggi maksimum gambar */
+  object-fit: cover; /* Memastikan gambar memenuhi dimensi yang ditentukan tanpa merubah aspek rasionya */
+}
+
+
+/* <===================> */
+/*        paragraf       */
+/*   ~~~~~~~~~~~~~~~~~~  */
+/* <===================> */
+.paragraf {
+  margin:50px 50px;
+  align-items: center;
+}
+.paragraf p{
+  padding-bottom: 10px;
+}
+
+.text-start{
+  color:var(--primary-color)
+}
+
+.clock {
+  display: flex;
+  color: #00ff00;
+  flex-direction: column;
+  border: #92fff6 solid 3px;
+  width: fit-content;
+  padding: 10px 19px;
+  border-style:dotted;
+}
+
+.date {
+  color: #00ff00;
+  color: #00ff00;
+  flex-direction: column;
+  border: #92fff6 solid 3px;
+  width: fit-content;
+  padding: 10px 10px;
+  border-style:dotted;
+}
+
+.jam {
+  margin-bottom: 0;
+  align-items: end;
+  border: violet solid 3px;
+  width: fit-content;
+  padding: 10px 10px;
+}
